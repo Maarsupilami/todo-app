@@ -47,6 +47,10 @@ fun TaskItem(
                     )
                 }
             }
+            task.description?.let {
+                Spacer(modifier = Modifier.height(8.dp))
+                Text(text = it)
+            }
         }
         Checkbox(
             checked = task.completed,

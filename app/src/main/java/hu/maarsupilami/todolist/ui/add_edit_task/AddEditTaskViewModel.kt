@@ -40,7 +40,7 @@ class AddEditTaskViewModel @Inject constructor(
                 repository.getTaskById(taskId)?.let {
                     title = it.title
                     description = it.description ?: ""
-                    this@AddEditTaskViewModel.task = task
+                    this@AddEditTaskViewModel.task = it
                 }
             }
         }

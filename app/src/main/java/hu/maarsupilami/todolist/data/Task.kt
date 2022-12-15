@@ -8,5 +8,5 @@ data class Task(
     val title: String,
     val description: String?,
     val completed: Boolean,
-    @PrimaryKey val id: Int? = null
+    @PrimaryKey val id: Int? = 0
 )
